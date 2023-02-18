@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd1ffc49-af09-45ee-b2af-1c466435a3d2">
+  <producedTypes>
+    <objectType typeId="f8931029-9c5c-4f8a-a93c-958e3f82a792" valueTypeId="d5512036-fb97-4511-ba4a-60f1c77205d4"/>
+    <refType typeId="3da72766-3401-4498-bf45-2a0cab9b42ed" valueTypeId="10b93f38-eb90-4089-8b51-7207213dadf5"/>
+    <selectionType typeId="8b515be6-3661-4e7a-83ad-c9cf56ebebe0" valueTypeId="ebb3b3e2-8db8-4b26-8c28-fc6a62d4a529"/>
+    <listType typeId="905c4425-5970-47db-8e82-cb3d91f5e9d8" valueTypeId="ec44f139-94a0-44d0-80fe-45adf3852555"/>
+    <managerType typeId="dc5ffb2d-6813-4a9d-8ec2-4b3e11cb58ca" valueTypeId="1dc004bc-1c27-4c59-b591-a6f772cc2f0c"/>
+  </producedTypes>
+  <name>Чек</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чек</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Чек.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Транзакции</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+</mdclass:Document>

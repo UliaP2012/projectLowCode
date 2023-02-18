@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee4bb475-6bdb-4013-b631-ad8c2b96a381">
+  <producedTypes>
+    <objectType typeId="8dbcebf1-fa22-4d3b-a101-2e5b73e3f7b2" valueTypeId="cf88f900-40e0-45b5-baca-cd9fa4e62c92"/>
+    <refType typeId="167bf95b-6035-423b-bd91-7e1567920fdb" valueTypeId="44ece8e1-97f7-4b79-aa82-9ea4a9575602"/>
+    <selectionType typeId="1d82be28-1a46-465d-a3d4-437a95810de3" valueTypeId="a887a878-b0ad-482a-9b1b-74d89ce9c6ec"/>
+    <listType typeId="d5c63ecb-ae7f-4c0c-9b84-36d398d45287" valueTypeId="7794c357-c015-47b8-b227-648dde4031f5"/>
+    <managerType typeId="2ae32250-5a9c-4706-aab1-05d7deb8d8e2" valueTypeId="9ca78eb4-918e-473f-bcc5-5b9430336ccc"/>
+  </producedTypes>
+  <name>Меню</name>
+  <synonym>
+    <key>ru</key>
+    <value>Меню</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Меню.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Меню.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Меню</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="b1e8fc7f-9301-44b3-913f-6d2c7f60eaba">
+    <name>НаименованиеТовара</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование товара</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="32ae7f61-52a3-42e7-97c8-6295ff8199fe">
+    <name>ЦенаТовара</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена товара</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="304bb96e-74b3-4ce7-a353-f48bf3f71ef2">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7533d6d5-7d4a-4533-8f74-400e8426b18a">
+  <producedTypes>
+    <objectType typeId="e638d0b2-03ba-41ee-9964-3550d5dad747" valueTypeId="02c68333-e731-4b2b-a575-090b519076e5"/>
+    <refType typeId="e9245d85-b7da-4d10-9bbe-be880b870257" valueTypeId="61b2fceb-2dec-42ae-b4de-391ecd9d8a7d"/>
+    <selectionType typeId="5b97d6a3-15f0-418c-996e-778e03f04137" valueTypeId="1e44f457-7fd0-4047-9192-c4bfd0685444"/>
+    <listType typeId="47c9b40a-578f-4f0d-bc8f-a9ab0fdab692" valueTypeId="74d8860a-3d96-4390-983e-1812b6e1729e"/>
+    <managerType typeId="691a26d3-8682-4a3b-ac9a-2161ef4c0034" valueTypeId="deb471bf-10c9-4248-bfa6-7b97b9ad7e85"/>
+  </producedTypes>
+  <name>Заказ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заказ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Заказ.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Заказы</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="14d2ace8-83fc-48d3-94d4-0bd083bd4546">
+    <name>НомерЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер заказа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>7</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="493921a9-4dd4-4e60-ad48-a85144825b8a">
+    <producedTypes>
+      <objectType typeId="3f5bf6ad-4e0c-48f3-8d60-d62dfb01b1c9" valueTypeId="1e66d233-8085-4b62-bb64-7d89c69b2f4d"/>
+      <rowType typeId="8e2cf844-6b20-4130-90bd-d5c73e5ea92a" valueTypeId="52c3586f-0ea6-450a-a857-a76f23ca269c"/>
+    </producedTypes>
+    <name>СоставЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав заказа</value>
+    </synonym>
+  </tabularSections>
+</mdclass:Document>
