@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd1ffc49-af09-45ee-b2af-1c466435a3d2">
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd1ffc49-af09-45ee-b2af-1c466435a3d2">
   <producedTypes>
     <objectType typeId="f8931029-9c5c-4f8a-a93c-958e3f82a792" valueTypeId="d5512036-fb97-4511-ba4a-60f1c77205d4"/>
     <refType typeId="3da72766-3401-4498-bf45-2a0cab9b42ed" valueTypeId="10b93f38-eb90-4089-8b51-7207213dadf5"/>
@@ -29,4 +29,44 @@
   <autonumbering>true</autonumbering>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="1b7b2291-4e06-4db1-bbc5-c1390dd619f5">
+    <name>СчетНачисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет начисления</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="819ef664-47d6-4c08-8b46-c3808e9aa542">
+    <name>СчетСписания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет списания</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
 </mdclass:Document>

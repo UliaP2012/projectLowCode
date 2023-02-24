@@ -48,6 +48,39 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="e13898c6-4d0f-4ebb-8411-7c3bccf2011c">
+    <name>ДатаЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата заказа</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="184cb6a3-0e16-4637-82cb-5be6f5d2d6bf">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Статус_заказа</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="493921a9-4dd4-4e60-ad48-a85144825b8a">
     <producedTypes>
       <objectType typeId="3f5bf6ad-4e0c-48f3-8d60-d62dfb01b1c9" valueTypeId="1e66d233-8085-4b62-bb64-7d89c69b2f4d"/>
@@ -58,5 +91,35 @@
       <key>ru</key>
       <value>Состав заказа</value>
     </synonym>
+    <attributes uuid="704a0c33-0285-4286-ab8e-862d67f9ab86">
+      <name>НаименованиеТовара</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование товара</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Меню</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9599db6b-f633-4908-b3e7-407717d5a588">
+      <name>ЦенаТовара</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена товара</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Меню</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
   </tabularSections>
 </mdclass:Document>
