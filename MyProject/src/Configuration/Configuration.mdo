@@ -51,4 +51,6 @@
   <documents>Document.Чек</documents>
   <enums>Enum.Пол</enums>
   <enums>Enum.Статус_заказа</enums>
+  <reports>Report.Выручка</reports>
+  <accumulationRegisters>AccumulationRegister.Выручка</accumulationRegisters>
 </mdclass:Configuration>
