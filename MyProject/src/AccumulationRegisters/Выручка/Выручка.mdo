@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9acd3465-2c48-432f-97a2-89c2348bbe4e">
+  <producedTypes>
+    <selectionType typeId="70e9c2cb-741d-4988-a59a-1b267011a980" valueTypeId="73fc0f1a-d293-4746-8807-dbd427ba8bff"/>
+    <listType typeId="b85312be-1a1e-460f-a776-0857d0aceac7" valueTypeId="14a1902b-39d8-4f6e-96ba-5ca8b6aefe29"/>
+    <managerType typeId="7ee02dcd-a973-4715-aefb-0ab336e76163" valueTypeId="fee516cd-d283-4610-a361-c6302eaa020e"/>
+    <recordSetType typeId="2e778cf9-9140-46e5-b364-234246150dc0" valueTypeId="a3c573d1-e288-4276-882f-36eece0ff649"/>
+    <recordKeyType typeId="ef246cab-7b88-4185-93f1-89b9942795d2" valueTypeId="93de5499-228b-40b4-bc47-9c4bd329c1ad"/>
+    <recordType typeId="349b0397-39d7-4d99-bb78-5f2abd0a2028" valueTypeId="652b9b92-5252-4277-9077-005a9dbcd028"/>
+  </producedTypes>
+  <name>Выручка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выручка</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="d17a2165-9835-4d10-b2b6-fec7182de5d3">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="24a90dc5-3422-4fe4-8bc5-13445169d0b1">
+    <name>ПозицияМеню</name>
+    <synonym>
+      <key>ru</key>
+      <value>Позиция меню</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Меню</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

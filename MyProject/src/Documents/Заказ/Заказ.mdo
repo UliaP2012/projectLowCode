@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7533d6d5-7d4a-4533-8f74-400e8426b18a">
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1a82ecdd-59c4-4a44-9964-12995fa96c1f">
   <producedTypes>
-    <objectType typeId="e638d0b2-03ba-41ee-9964-3550d5dad747" valueTypeId="02c68333-e731-4b2b-a575-090b519076e5"/>
-    <refType typeId="e9245d85-b7da-4d10-9bbe-be880b870257" valueTypeId="61b2fceb-2dec-42ae-b4de-391ecd9d8a7d"/>
-    <selectionType typeId="5b97d6a3-15f0-418c-996e-778e03f04137" valueTypeId="1e44f457-7fd0-4047-9192-c4bfd0685444"/>
-    <listType typeId="47c9b40a-578f-4f0d-bc8f-a9ab0fdab692" valueTypeId="74d8860a-3d96-4390-983e-1812b6e1729e"/>
-    <managerType typeId="691a26d3-8682-4a3b-ac9a-2161ef4c0034" valueTypeId="deb471bf-10c9-4248-bfa6-7b97b9ad7e85"/>
+    <objectType typeId="16aa5925-bbdb-4e4d-a980-21264e2f66fd" valueTypeId="bccb0eb3-f779-4b61-b076-2ec9f2e2389c"/>
+    <refType typeId="35de67f6-7972-4af9-91f6-c93e56b61b76" valueTypeId="db5a5fd9-a4e5-40c1-b249-11d627cb7f06"/>
+    <selectionType typeId="0890e786-b2d9-48b1-89ff-01f6ca81fdb8" valueTypeId="126e8d17-c180-451a-8492-e3add93738c8"/>
+    <listType typeId="8fef872d-7587-401f-92bd-a337ca9d1031" valueTypeId="ecdfe2b7-fbe8-405a-8f44-d72c81577576"/>
+    <managerType typeId="ba945df5-10d2-40d7-b650-346bf467e87c" valueTypeId="825dc31a-5198-4e91-83ae-afbe5a4232e1"/>
   </producedTypes>
   <name>Заказ</name>
   <synonym>
@@ -18,84 +18,54 @@
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
-  <listPresentation>
-    <key>ru</key>
-    <value>Заказы</value>
-  </listPresentation>
   <numberType>String</numberType>
   <numberLength>9</numberLength>
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.Заказ.Form.Заказ</defaultObjectForm>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
-  <attributes uuid="14d2ace8-83fc-48d3-94d4-0bd083bd4546">
-    <name>НомерЗаказа</name>
+  <attributes uuid="3235e2c1-1744-429f-b5f2-7a78185cab3d">
+    <name>СтатусЗаказа</name>
     <synonym>
       <key>ru</key>
-      <value>Номер заказа</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>7</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="e13898c6-4d0f-4ebb-8411-7c3bccf2011c">
-    <name>ДатаЗаказа</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата заказа</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="184cb6a3-0e16-4637-82cb-5be6f5d2d6bf">
-    <name>Статус</name>
-    <synonym>
-      <key>ru</key>
-      <value>Статус</value>
+      <value>Статус заказа</value>
     </synonym>
     <type>
       <types>EnumRef.Статус_заказа</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <tabularSections uuid="493921a9-4dd4-4e60-ad48-a85144825b8a">
+  <forms uuid="4544e8fc-6e6b-4d94-8482-5c2ba1b9c358">
+    <name>Заказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="b909ac9d-4375-40f5-a241-dc94297bbf1f">
     <producedTypes>
-      <objectType typeId="3f5bf6ad-4e0c-48f3-8d60-d62dfb01b1c9" valueTypeId="1e66d233-8085-4b62-bb64-7d89c69b2f4d"/>
-      <rowType typeId="8e2cf844-6b20-4130-90bd-d5c73e5ea92a" valueTypeId="52c3586f-0ea6-450a-a857-a76f23ca269c"/>
+      <objectType typeId="535267a8-efb2-48f1-ae4d-e70bb1819eee" valueTypeId="ea4a9242-fb2d-4d02-ba37-5a3729775a61"/>
+      <rowType typeId="b34885d5-3ce9-47d9-a44e-eac9f83e481f" valueTypeId="82615180-2351-474e-9fc7-ddba483ebb04"/>
     </producedTypes>
     <name>СоставЗаказа</name>
     <synonym>
       <key>ru</key>
       <value>Состав заказа</value>
     </synonym>
-    <attributes uuid="704a0c33-0285-4286-ab8e-862d67f9ab86">
-      <name>НаименованиеТовара</name>
+    <fillChecking>ShowError</fillChecking>
+    <attributes uuid="806dc7a7-505d-4111-b8d1-bb4e6afe1c76">
+      <name>СтатьяЗаказа</name>
       <synonym>
         <key>ru</key>
-        <value>Наименование товара</value>
+        <value>Статья заказа</value>
       </synonym>
       <type>
         <types>CatalogRef.Меню</types>
@@ -106,18 +76,21 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="9599db6b-f633-4908-b3e7-407717d5a588">
-      <name>ЦенаТовара</name>
+    <attributes uuid="e919fa4f-72a8-4533-96aa-bf0f50c5e9c4">
+      <name>Количество</name>
       <synonym>
         <key>ru</key>
-        <value>Цена товара</value>
+        <value>Количество</value>
       </synonym>
       <type>
-        <types>CatalogRef.Меню</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>2</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
-      <fillChecking>ShowError</fillChecking>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
