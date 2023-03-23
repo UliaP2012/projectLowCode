@@ -101,19 +101,19 @@
     </extInfo>
   </items>
   <items xsi:type="form:FormField">
-    <name>СчетНачисления</name>
-    <id>7</id>
+    <name>Кассир</name>
+    <id>53</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.СчетНачисления</segments>
+      <segments>Объект.Кассир</segments>
     </dataPath>
     <extendedTooltip>
-      <name>СчетНачисленияРасширеннаяПодсказка</name>
-      <id>9</id>
+      <name>КассирРасширеннаяПодсказка</name>
+      <id>55</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -127,8 +127,8 @@
       </extInfo>
     </extendedTooltip>
     <contextMenu>
-      <name>СчетНачисленияКонтекстноеМеню</name>
-      <id>8</id>
+      <name>КассирКонтекстноеМеню</name>
+      <id>54</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -137,7 +137,7 @@
       <autoFill>true</autoFill>
     </contextMenu>
     <type>InputField</type>
-    <editMode>EnterOnInput</editMode>
+    <editMode>Enter</editMode>
     <showInHeader>true</showInHeader>
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
@@ -151,19 +151,19 @@
     </extInfo>
   </items>
   <items xsi:type="form:FormField">
-    <name>СчетСписания</name>
-    <id>10</id>
+    <name>Итого</name>
+    <id>44</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.СчетСписания</segments>
+      <segments>Объект.Итого</segments>
     </dataPath>
     <extendedTooltip>
-      <name>СчетСписанияРасширеннаяПодсказка</name>
-      <id>12</id>
+      <name>ИтогоРасширеннаяПодсказка</name>
+      <id>46</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -177,8 +177,8 @@
       </extInfo>
     </extendedTooltip>
     <contextMenu>
-      <name>СчетСписанияКонтекстноеМеню</name>
-      <id>11</id>
+      <name>ИтогоКонтекстноеМеню</name>
+      <id>45</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -187,7 +187,7 @@
       <autoFill>true</autoFill>
     </contextMenu>
     <type>InputField</type>
-    <editMode>EnterOnInput</editMode>
+    <editMode>Enter</editMode>
     <showInHeader>true</showInHeader>
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
@@ -201,16 +201,19 @@
     </extInfo>
   </items>
   <items xsi:type="form:FormField">
-    <name>НомерЗаказа</name>
-    <id>13</id>
+    <name>НДС</name>
+    <id>47</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.НДС</segments>
+    </dataPath>
     <extendedTooltip>
-      <name>НомерЗаказаРасширеннаяПодсказка</name>
-      <id>15</id>
+      <name>НДСРасширеннаяПодсказка</name>
+      <id>49</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -224,8 +227,8 @@
       </extInfo>
     </extendedTooltip>
     <contextMenu>
-      <name>НомерЗаказаКонтекстноеМеню</name>
-      <id>14</id>
+      <name>НДСКонтекстноеМеню</name>
+      <id>48</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -233,10 +236,69 @@
       </userVisible>
       <autoFill>true</autoFill>
     </contextMenu>
-    <editMode>EnterOnInput</editMode>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
     <showInHeader>true</showInHeader>
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>СпособОплаты</name>
+    <id>50</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.СпособОплаты</segments>
+    </dataPath>
+    <extendedTooltip>
+      <name>СпособОплатыРасширеннаяПодсказка</name>
+      <id>52</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>СпособОплатыКонтекстноеМеню</name>
+      <id>51</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
   </items>
   <items xsi:type="form:Table">
     <name>СоставЗаказа</name>
@@ -720,6 +782,10 @@
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:DocumentFormExtInfo">
+    <handlers>
+      <event>BeforeWrite</event>
+      <name>ПередЗаписью</name>
+    </handlers>
     <repostOnWrite>true</repostOnWrite>
   </extInfo>
 </form:Form>

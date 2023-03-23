@@ -34,6 +34,7 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Номенклатуры.Form.НоменклатураПродукты</defaultObjectForm>
   <attributes uuid="19224c67-3978-4eb0-87b8-c96bf8b25851">
     <name>ДатаПоступления</name>
     <synonym>
@@ -92,23 +93,13 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="618ee39c-46de-40ed-b9f7-b9e340b648e7">
-    <name>НазваниеОбъекта</name>
+  <forms uuid="081317b4-dcc7-4c08-841b-71ea062438be">
+    <name>НоменклатураПродукты</name>
     <synonym>
       <key>ru</key>
-      <value>Название объекта</value>
+      <value>Номенклатура продукты</value>
     </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>40</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>

@@ -47,9 +47,10 @@
   <catalogs>Catalog.Роботы</catalogs>
   <catalogs>Catalog.Сотрудники</catalogs>
   <catalogs>Catalog.Столы</catalogs>
-  <documents>Document.Заказ</documents>
+  <documents>Document.ЗаказКлиент</documents>
   <documents>Document.Чек</documents>
   <enums>Enum.Пол</enums>
+  <enums>Enum.СпособОплаты</enums>
   <enums>Enum.Статус_заказа</enums>
   <reports>Report.Выручка</reports>
   <accumulationRegisters>AccumulationRegister.Выручка</accumulationRegisters>

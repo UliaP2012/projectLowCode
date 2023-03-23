@@ -101,19 +101,19 @@
     </extInfo>
   </items>
   <items xsi:type="form:FormField">
-    <name>СтатусЗаказа</name>
-    <id>10</id>
+    <name>КомментарийКЗаказу</name>
+    <id>35</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.СтатусЗаказа</segments>
+      <segments>Объект.КомментарийКЗаказу</segments>
     </dataPath>
     <extendedTooltip>
-      <name>СтатусЗаказаРасширеннаяПодсказка</name>
-      <id>12</id>
+      <name>КомментарийКЗаказуРасширеннаяПодсказка</name>
+      <id>37</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -127,8 +127,8 @@
       </extInfo>
     </extendedTooltip>
     <contextMenu>
-      <name>СтатусЗаказаКонтекстноеМеню</name>
-      <id>11</id>
+      <name>КомментарийКЗаказуКонтекстноеМеню</name>
+      <id>36</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -223,6 +223,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.СоставЗаказа.СтатьяЗаказа</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>СоставЗаказаНаименованиеПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>СоставЗаказаНаименованиеРасширеннаяПодсказка</name>
         <id>31</id>
@@ -263,6 +267,60 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
+      <name>СоставЗаказаЦена</name>
+      <id>41</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.СоставЗаказа.Цена</segments>
+      </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>СоставЗаказаЦенаПриИзменении1</name>
+      </handlers>
+      <extendedTooltip>
+        <name>СоставЗаказаЦенаРасширеннаяПодсказка</name>
+        <id>43</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СоставЗаказаЦенаКонтекстноеМеню</name>
+        <id>42</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
       <name>СоставЗаказаКоличество</name>
       <id>32</id>
       <visible>true</visible>
@@ -273,6 +331,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.СоставЗаказа.Количество</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>СоставЗаказаКоличествоПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>СоставЗаказаКоличествоРасширеннаяПодсказка</name>
         <id>34</id>
@@ -291,6 +353,56 @@
       <contextMenu>
         <name>СоставЗаказаКоличествоКонтекстноеМеню</name>
         <id>33</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>СоставЗаказаИтогоПоПозицииМеню</name>
+      <id>53</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.СоставЗаказа.ИтогоПоПозицииМеню</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>СоставЗаказаИтогоПоПозицииМенюРасширеннаяПодсказка</name>
+        <id>55</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СоставЗаказаИтогоПоПозицииМенюКонтекстноеМеню</name>
+        <id>54</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -481,16 +593,23 @@
     <fileDragMode>AsFileRef</fileDragMode>
   </items>
   <items xsi:type="form:FormField">
-    <name>Наименование</name>
-    <id>7</id>
+    <name>Итого</name>
+    <id>47</id>
+    <title>
+      <key>ru</key>
+      <value>Итого</value>
+    </title>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Итого</segments>
+    </dataPath>
     <extendedTooltip>
-      <name>НаименованиеРасширеннаяПодсказка</name>
-      <id>9</id>
+      <name>ИтогоРасширеннаяПодсказка</name>
+      <id>49</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -504,8 +623,8 @@
       </extInfo>
     </extendedTooltip>
     <contextMenu>
-      <name>НаименованиеКонтекстноеМеню</name>
-      <id>8</id>
+      <name>ИтогоКонтекстноеМеню</name>
+      <id>48</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -513,10 +632,19 @@
       </userVisible>
       <autoFill>true</autoFill>
     </contextMenu>
-    <editMode>EnterOnInput</editMode>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
     <showInHeader>true</showInHeader>
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
   </items>
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
@@ -541,7 +669,7 @@
     <name>Объект</name>
     <id>1</id>
     <valueType>
-      <types>DocumentObject.Заказ</types>
+      <types>DocumentObject.ЗаказКлиент</types>
     </valueType>
     <view>
       <common>true</common>
@@ -560,6 +688,10 @@
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:DocumentFormExtInfo">
+    <handlers>
+      <event>BeforeWrite</event>
+      <name>ПередЗаписью</name>
+    </handlers>
     <repostOnWrite>true</repostOnWrite>
   </extInfo>
 </form:Form>
