@@ -45,6 +45,7 @@
   <catalogs>Catalog.Акции</catalogs>
   <catalogs>Catalog.Лицензии</catalogs>
   <catalogs>Catalog.Меню</catalogs>
+  <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.Номенклатуры</catalogs>
   <catalogs>Catalog.Роботы</catalogs>
   <catalogs>Catalog.Сотрудники</catalogs>
