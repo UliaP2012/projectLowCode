@@ -39,19 +39,22 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
-  <roles>Role.ПолныеПрава</roles>
   <constants>Constant.Адрес</constants>
   <constants>Constant.Название</constants>
   <catalogs>Catalog.Акции</catalogs>
   <catalogs>Catalog.Лицензии</catalogs>
   <catalogs>Catalog.Меню</catalogs>
-  <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.Номенклатуры</catalogs>
+  <catalogs>Catalog.Поставщики</catalogs>
   <catalogs>Catalog.Роботы</catalogs>
   <catalogs>Catalog.Сотрудники</catalogs>
   <catalogs>Catalog.Столы</catalogs>
   <documents>Document.ЗаказКлиент</documents>
+  <documents>Document.ПриходнаяНакладная</documents>
   <documents>Document.Чек</documents>
+  <enums>Enum.ВидДоговора</enums>
+  <enums>Enum.ВидОперации</enums>
+  <enums>Enum.ЕдиницаИзмерения</enums>
   <enums>Enum.Пол</enums>
   <enums>Enum.СпособОплаты</enums>
   <enums>Enum.Статус_заказа</enums>
