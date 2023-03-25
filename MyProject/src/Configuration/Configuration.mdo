@@ -42,6 +42,7 @@
   <roles>Role.ПолныеПрава</roles>
   <constants>Constant.Адрес</constants>
   <constants>Constant.Название</constants>
+  <catalogs>Catalog.Акции</catalogs>
   <catalogs>Catalog.Лицензии</catalogs>
   <catalogs>Catalog.Меню</catalogs>
   <catalogs>Catalog.Номенклатуры</catalogs>

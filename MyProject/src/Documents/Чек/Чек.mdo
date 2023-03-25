@@ -144,6 +144,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="3eedf1c9-16b8-421d-9210-ec29ff2cdedb">
+    <name>ПримененныеАкции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примененные акции</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Акции</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="33109c55-b372-4cae-b673-a7698c142d24">
     <name>Чек</name>
     <synonym>
