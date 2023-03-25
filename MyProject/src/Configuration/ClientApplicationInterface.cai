@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cai:ClientApplicationInterface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cai="http://g5.1c.ru/v8/dt/cai">
-  <left xsi:type="cai:CaiPanel" id="378439f7-9aa8-4cb9-b3f3-5018342fb479" name="SectionPanel" displayType="PictureAndText"/>
-  <unset id="b81a33ba-2d04-45d2-8bb4-f7c7881d6a45" name="FavoritePanel"/>
-  <unset id="dfe0588f-6b30-4d1d-bab2-b6f4a1db66bb" name="HistoryPanel"/>
-  <unset id="5ec70b46-45b0-46f3-bd5e-b6e11384a0fc" name="OpenedPanel"/>
-  <unset id="164b071c-604a-47df-a826-55251a7ed9ed" name="FunctionsPanel"/>
+<cai:ClientApplicationInterface xmlns:cai="http://g5.1c.ru/v8/dt/cai">
+  <unset id="b553047f-c9aa-4157-978d-448ecad24248" name="SectionPanel" displayType="PictureAndText"/>
+  <unset id="13322b22-3960-4d68-93a6-fe2dd7f28ca3" name="FavoritePanel"/>
+  <unset id="c933ac92-92cd-459d-81cc-e0c8a83ced99" name="HistoryPanel"/>
+  <unset id="cbab57f2-a0f3-4f0a-89ea-4cb19570ab75" name="OpenedPanel"/>
+  <unset id="b2735bd3-d822-4430-ba59-c9e869693b24" name="FunctionsPanel"/>
 </cai:ClientApplicationInterface>
